@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header><h1>Interactive Photo Gallery</h1><p>Discover colorful landscapes. Hover or focus on a picture to preview it.</p></header>
+  <main id="main">
+    <div id="image" role="status" aria-live="polite">Hover over an image below to display here.</div>
+    <section class="gallery" aria-label="Landscape photo gallery">
+      <img class="preview" src="images/mountains.svg" alt="Sunrise above purple mountains" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="images/ocean.svg" alt="Blue ocean with white waves" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="images/forest.svg" alt="Green pine forest and a winding path" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="images/desert.svg" alt="Golden sand dunes under a warm sky" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="images/lake.svg" alt="Peaceful lake surrounded by hills" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="images/night.svg" alt="Starry night sky over distant mountains" tabindex="0" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    </section>
+  </main>
+  <footer><p>Interactive Photo Gallery | HTML, CSS and JavaScript</p></footer>
+</body>
+</html>
